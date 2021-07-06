@@ -4,6 +4,7 @@ var path = require('path');
 const fs = require("fs");
 const requests = require("requests");
 const { parse } = require("path/posix");
+const port = process.env.PORT || 8000;
 const app = express();
 
 app.use(express.static("public"));
@@ -40,6 +41,6 @@ app.get("/", function(req, res) {
         });
 })
 
-app.listen(8000, function() {
+app.listen(port, function() {
     console.log("running");
 })
