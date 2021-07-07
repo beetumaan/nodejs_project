@@ -233,6 +233,7 @@ const getcurrday = () => {
     if (hr > 12) {
         hr = hr - 12;
     }
+    if (hr == 0) hr = 12 + hr;
     currDate.innerHTML = (day + " | " + month + " " + date + " | " + hr + ":" + min + " " + per);
 };
 

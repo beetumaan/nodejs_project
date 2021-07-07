@@ -5,13 +5,14 @@
     "main": "node.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start" : "node src/app.js"
+        "start": "node src/app.js"
     },
     "author": "maan",
     "license": "ISC",
     "dependencies": {
         "ejs": "^3.1.6",
         "express": "^4.17.1",
+        "mongoose": "^5.13.2",
         "request": "^2.88.2",
         "requests": "^0.3.0"
     }
